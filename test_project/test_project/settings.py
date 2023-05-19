@@ -12,6 +12,12 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from pathlib import Path
 
+# Define el módulo de configuración de Django para la aplicación
+DJANGO_SETTINGS_MODULE = 'test_project.settings'
+
+# Configura la variable de entorno DJANGO_SETTINGS_MODULE
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', DJANGO_SETTINGS_MODULE)
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
